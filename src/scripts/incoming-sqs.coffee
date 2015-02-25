@@ -9,6 +9,10 @@
 AWS = require 'aws-sdk'
 
 module.exports = (robot) ->
+  unless process.env.HUBOT_SQS_QUEUE_URL
+    robot.logger.error "Disabling incoming-sqs plugin because HUBOT_SQS_QUEUE_URL is not set."
+    return
+
   sqs = new AWS.SQS { region: process.env.AWS_SQS_REGION ? 'us-east-1' }
 
   receiver = (sqs, queue) ->
