@@ -26,9 +26,9 @@ e.g.: `https://sqs.us-east-1.amazonaws.com/885581794223/hubot-queue`
 
 AWS-related environment variables are required to be set correctly, so that the bot can access the queue specified above with HUBOT_SQS_QUEUE_URL.
 
-### AWS_SQS_REGION
+### AWS_REGION
 
-You can configure the region of SQS with AWS_SQS_REGION, which defaults to `us-east-1`.
+You can configure the region of SQS with AWS_REGION, which defaults to `us-east-1`.
 
 ## Commands
 
