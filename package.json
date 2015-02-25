@@ -1,0 +1,30 @@
+{
+  "name": "hubot-incoming-sqs",
+  "version": "0.1.0",
+  "description": "Incoming message queue for Hubot using Amazon SQS",
+  "main": "index.js",
+  "scripts": {
+    "hubot": "hubot -a shell"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/miyagawa/hubot-incoming-sqs"
+  },
+  "keywords": [
+    "hubot",
+    "hubot-scripts"
+  ],
+  "author": "Tatsuhiko Miyagawa <miyagawa@bulknews.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miyagawa/hubot-incoming-sqs/issues"
+  },
+  "homepage": "https://github.com/miyagawa/hubot-incoming-sqs",
+  "dependencies": {
+    "aws-sdk": "^2.1.14"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.9.1",
+    "hubot": "^2.11.1"
+  }
+}
